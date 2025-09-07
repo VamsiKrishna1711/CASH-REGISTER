@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.register {
+    background: #2c3e50;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    max-width: 400px;
+    width: 100%;
+}
+
+.screen {
+    background: #1a1a1a;
+    border: 8px solid #34495e;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.display {
+    background: #0f3460;
+    color: #00ff41;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    min-height: 120px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cash-input {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    gap: 10px;
+}
+
+.cash-input label {
+    font-weight: bold;
+}
+
+#cash {
+    background: transparent;
+    border: 2px solid #00ff41;
+    color: #00ff41;
+    padding: 8px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    width: 100px;
+}
+
+#cash:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00ff41;
+}
+
+#change-due {
+    margin-top: 10px;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+.keypad {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#purchase-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#purchase-btn:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+.drawer {
+    background: #34495e;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.drawer-title {
+    color: #ecf0f1;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.currency-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.currency-item {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #4a5f7a;
+}
+
+.currency-name {
+    font-weight: bold;
+    display: block;
+}
+
+.currency-amount {
+    color: #2ecc71;
+}

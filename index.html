@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="register">
+        <div class="screen">
+            <div class="display">
+                <div class="price">Price: $<span id="price-display">19.50</span></div>
+                <div class="cash-input">
+                    <label>Cash: $</label>
+                    <input type="number" id="cash" step="0.01" placeholder="0.00">
+                </div>
+                <div id="change-due"></div>
+            </div>
+        </div>
+        <div class="keypad">
+            <button id="purchase-btn">PURCHASE</button>
+        </div>
+        <div class="drawer">
+            <div class="drawer-title">Cash Drawer</div>
+            <div class="currency-grid" id="currency-display"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
